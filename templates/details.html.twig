@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block hero %}
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    
+            <div class="card mt-5">
+                <div class="card-thumbnail">
+                    <img src="/upload/{{event.image}}" class="img-fluid" alt="" style="width:100%;height:500px;">
+                </div>
+                <div class="card-info">
+                    <h3><a href="#" class="mt-2 text-secondary text-decoration-none">{{event.name}}</a></h3>
+                <p class="text-secondary mt-2">Capacity: {{event.capacity}}</p> 
+                <p class="text-secondary mt-2">date: {{event.date|date('F j, Y, g:i a')}}</p> 
+                <p class="text-secondary mt-2">Start Time: {{event.startTime}}</p> 
+                <p class="text-secondary mt-2">Email: {{event.email}}</p> 
+                <p class="text-secondary mt-2">Phone: {{event.phone}}</p> 
+                <p class="text-secondary mt-2">URL: {{event.url}}</p> 
+                <p class="text-secondary mt-2">Location: {{event.location}}</p> 
+                <p class="text-secondary mt-2">Zip-Code: {{event.zipCode}}</p> 
+
+
+                <p class="text-secondary mt-2">{{event.description}}</p>
+                </div>
+            </div>
+        </div>';
+
+
+
+
+{% endblock %}
